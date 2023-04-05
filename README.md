@@ -1,4 +1,21 @@
-# typescript-npm-package-template
+# LLM Auto-Context
+
+## Goals
+- It's been demonstrated that LLMS can be used for semantic compression.
+- We can Use LLMs to auto-compress "far away" context, and keep "nearby" context in tact.
+- We can also use LLMs to help find "far away" context which is likely relevant to the current passage.
+
+
+## TODO
+- [ ] Auto-Context Function 1: LLM-Only
+    1. GIVEN: A Prompt, A Target Document, and A Max Model context window (in tokens), along with some parameters
+    2. use LLM for context-aware compression of out-of-band elements, until the context window is fully utilized based on the user's parameters.
+- [ ] Auto-Context Function 2: LLM + Vectorstore
+    1. We can likely augment Function 1 by adding a Vectorstore.
+
+-------------
+# Original README.md
+
 
 > Template to kickstart creating a Node.js module using TypeScript and VSCode
 
